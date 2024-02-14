@@ -1,0 +1,243 @@
+@font-face {
+    font-family: AffectionatelyYours;
+    src: url(./assets/fonts/AffectionatelyYours.ttf);
+}
+
+@font-face {
+    font-family: cheri;
+    src: url(./assets/fonts/Cheri.TTF);
+}
+
+@keyframes heart {
+    from {
+      color: rgba(255, 105, 180, 0);
+    }
+    to {
+      font-size: 50px;
+      transform: translateY(-300px);
+      color: rgb(0, 0, 0);
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 20px #d73669b3;
+    border-radius: 10px;
+    width: 100px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(235, 122, 122);
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+body{
+    background: linear-gradient(#d73668, #f8748c );
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: AffectionatelyYours;
+}
+.heading{
+    display: flex;
+    font-family: cheri;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:visible;
+    margin: 50px;
+}
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+#first-sec{
+    margin-top: 0;
+}
+
+#first-img{
+    border-radius: 2em;
+    height: 25%;
+    width: 35%;
+}
+
+#first-img-1{
+    border-radius: 2em;
+    height: 30%;
+    width: 50%;
+    margin-left: 20px;
+}
+
+#sleep-img{
+    border-radius: 2em;
+    height: 50%;
+    width: 35%;
+}
+
+#second-img{
+    height: 48%;
+    width: 28%;
+    border-radius: 2em;
+}
+
+#third-img{
+    height: 48%;
+    width: 28%;
+    border-radius: 2em;
+}
+
+#trial-img{
+    height: 48%;
+    width: 28%;
+    border-radius: 2em;
+}
+
+.heart{
+    height: 100px;
+    width: 100px;
+    color: rgb(235, 71, 71);
+}
+
+.sec img{
+    box-shadow: 15px 15px 5px #32051350;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.sec img:hover{
+    transform: translateY(-10px) scale(1.1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    box-shadow: #00000050;
+}
+
+#first-img:hover::before {
+  position: absolute;
+  content: "❤";
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  top: -20%px; /* Adjust position to fit with the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  animation: heart 1s both;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div p{
+    opacity: 1;
+    filter: blur(5px);
+    transition: all 1s;
+    z-index: 1;
+    margin: 10px;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+}
+
+section p{
+    font-size: 40px;
+    font-family: AffectionatelyYours;
+}
+
+
+
+#next-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 30px;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.gif_container{
+    justify-content: center;
+    align-items: center;
+}
+
+#bear-img{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+}
+
+.button {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border: #e10909 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+  
+.button:hover {
+    background-color: #f0285a;
+    cursor: pointer;
+}
+  
+.button svg {
+    width: 25px;
+    margin: -0.75em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+  
+.button:hover svg {
+    transform: translateX(50px);
+}
+  
+
+h3{
+    font-size: 50px;
+    font-weight: 599;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+#hearts{
+    height: 100px;
+    width: auto;
+}

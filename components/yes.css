@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(rgb(247, 64, 119), rgb(239, 145, 168));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.muah{
+    height: 500px;
+    width: 800px;
+    border-radius: 2em;
+}
+
+h3{
+    font-family: AffectionatelyYours;
+    color: whitesmoke;
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
